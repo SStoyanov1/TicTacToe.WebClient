@@ -1,0 +1,21 @@
+<div ng-controller="CreateGameCtrl" class="container">
+    <div class="well">
+        <form name="createGameForm" class="form-horizontal">
+            <fieldset>
+                <legend>Create New Game</legend>
+                <div class="form-group">
+                    <label for="game-name" class="col-md-2 control-label">Name</label>
+                    <div class="col-md-10">
+                        <input id="game-name" type="text" placeholder="Game name" ng-model="game.Name" required="required" class="form-control"/>
+                    </div>
+                </div>
+                <div class="center-block">
+                    <button ng-click="createNewGame(game)" ng-disabled="signUpForm.$invalid" class="btn btn-primary">
+                        Create
+                    </button>
+                    <a href="#/" class="btn btn-primary">Cancel</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
